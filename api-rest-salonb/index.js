@@ -25,6 +25,19 @@ app.use(express.urlencoded({extended: true}));
 
 //Cargar Configuracion de Rutas
 
+const  userRoutes = require("./routes/user");
+const  servicesRoutes = require("./routes/services");
+const  reviewsRoutes = require("./routes/reviews");
+const  beautySalonsRoutes = require("./routes/beautySalons");
+const  appointmentsRoutes = require("./routes/appointments");
+
+app.use("/api/user", userRoutes);
+app.use("/api", servicesRoutes);
+app.use("/api", reviewsRoutes);
+app.use("/api", beautySalonsRoutes);
+app.use("/api", appointmentsRoutes);
+
+
 
 //Ruta de prueba
 app.get("/ruta-prueba", (req, res) => {
