@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connection = async() => {
 
-    try{
+    try {
         await mongoose.connect("mongodb://localhost:27017/appwebsalon");
         
         console.log("Conectado correctamente a bd: appwebsalon");

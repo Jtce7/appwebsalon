@@ -18,13 +18,10 @@
 				"mongodb.mongodb-vscode"
 			]
 		}
-	},
-	"features": {
-		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
-	},
+	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	 "forwardPorts": [3900]
+	// "forwardPorts": [3000, 27017],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
