@@ -3,7 +3,7 @@ const connection = require("./database/connection");
 const express = require("express");
 const cors = require("cors");
 
-//Mensaje Bienvenidad
+//Mensaje Bienvenida
 console.log("API NODE para APPWEBSALON arrancada!!");
 
 
@@ -32,10 +32,10 @@ const  beautySalonsRoutes = require("./routes/beautySalons");
 const  appointmentsRoutes = require("./routes/appointments");
 
 app.use("/api/user", userRoutes);
-app.use("/api", servicesRoutes);
-app.use("/api", reviewsRoutes);
-app.use("/api", beautySalonsRoutes);
-app.use("/api", appointmentsRoutes);
+app.use("/api/user", servicesRoutes);
+app.use("/api/user", reviewsRoutes);
+app.use("/api/user", beautySalonsRoutes);
+app.use("/api/user", appointmentsRoutes);
 
 
 

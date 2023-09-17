@@ -6,7 +6,11 @@ const UserSchema = Schema({
         required: true
     },
 
-    surname: String,
+    surname: {
+        type: String,
+        required: true
+    },
+
     nick: {
         type: String,
         required: true
@@ -18,6 +22,11 @@ const UserSchema = Schema({
     },
 
     password: {
+        type: String,
+        required: true
+    },
+
+    phone: {
         type: String,
         required: true
     },
@@ -35,7 +44,7 @@ const UserSchema = Schema({
     created_at: {
         type: Date,
         default: Date.now
-    }
+    },
 
 });
 
