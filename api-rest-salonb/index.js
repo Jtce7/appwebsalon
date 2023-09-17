@@ -26,16 +26,16 @@ app.use(express.urlencoded({extended: true}));
 //Cargar Configuracion de Rutas
 
 const  userRoutes = require("./routes/user");
-const  servicesRoutes = require("./routes/services");
-const  reviewsRoutes = require("./routes/reviews");
-const  beautySalonsRoutes = require("./routes/beautySalons");
-const  appointmentsRoutes = require("./routes/appointments");
+//const  servicesRoutes = require("./routes/services");
+//const  reviewsRoutes = require("./routes/reviews");
+//const  beautySalonsRoutes = require("./routes/beautySalons");
+//const  appointmentsRoutes = require("./routes/appointments");
 
 app.use("/api/user", userRoutes);
-app.use("/api/user", servicesRoutes);
-app.use("/api/user", reviewsRoutes);
-app.use("/api/user", beautySalonsRoutes);
-app.use("/api/user", appointmentsRoutes);
+//app.use("/api/user", servicesRoutes);
+//app.use("/api/user", reviewsRoutes);
+//app.use("/api/user", beautySalonsRoutes);
+//app.use("/api/user", appointmentsRoutes);
 
 
 
