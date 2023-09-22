@@ -4,12 +4,16 @@
   "description": "api-rest appweb",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "author": "FXD JTCE",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "underscore": "^1.13.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
